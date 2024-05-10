@@ -7,7 +7,7 @@ const bot = new TelegramBot(TOKEN, {
     polling: true
 });
 const port = process.env.PORT || 5000;
-const gameName = "Daun1";
+const gameName = "TapTap";
 const queries = {};
 server.use(express.static(path.join(__dirname, 'Daun1')));
 bot.onText(/help/, (msg) => bot.sendMessage(msg.from.id, "Say /game if you want to play."));
